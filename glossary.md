@@ -30,8 +30,28 @@ Importantly, this dichotomy also implies that the perception of physical afforda
 By contrast, the dorsal system is responsible for the transformation of “visual information into an egocentric framework allowing the actor to grasp or otherwise bodily manipulate the object” 
 Norman and Young (2006) have suggested that the perception of affordances – and more specifically of physical affordances for Norman – might be supported by the dorsal system. The same theoretical rapprochement may be envisaged between the dorsal system and the affordance route to action. Nevertheless, Yoon and Humphreys (2007) argued that such a rapprochement remains to be demonstrated, notably because of studies indicating that action decision tasks can activate the left inferior temporal lobe (i.e., the ventral system).[^neuro&behavior01affordance]
 
+**Perceived affordance
+
+The designer cares more about what actions the user perceives to be possible than what is true. Moreover, affordances, both real and perceived, play very different roles in physical products than they do in the world of screen-based products. In the latter case, affordances play a relatively minor role: cultural conventions are much more important. More on that in a moment. In product design, where one deals with real, physical objects, there can be both real and perceived affordances, and the two sets need not be the same. In graphical, screen-based interfaces, the designer primarily can control only perceived affordances. The computer system already comes with built-in physical affordances. The computer, with its keyboard, display screen, pointing device, and selection buttons (e.g., mouse buttons) affords pointing, touching, looking, and clicking on every pixel of the screen. Most of this affordance is of little interest for the purpose of the application under design. Although all screens within reaching distance afford touching, only some can detect the touch and respond to it. Thus, if the display does not have a touch-sensitive screen, the screen still affords touching, but it has no effect on the computer system. 
+
+The traditional computer screen where the user can move the cursor to any location on the screen and click the mouse button at anytime. In this circumstance, designers sometimes will say that when they put an icon, cursor, or other target on the screen, they have added an “affordance” to the system. This is a misuse of the concept. The affordance is independent of what we see on the screen, what is displayed is not an affordance it is more of visual feedback that ADVERTISES the affordance, which makes it a perceived affordance. The difference is important because they are independent design concepts: the affordances, the feedback, and the perceived affordances can all be manipulated independently of one another.
+
+Perceived affordances are sometimes useful even if the system does not support the real affordance.
+
+Real affordances do not always have to have a visible presence (and in some cases, it is best to hide the real affordance).
+
+The presence of feedback can dramatically affect the usability and understandability of a system, but quite independently of the affordances or their visibility.
+
+The most important design tool is that of coherence and understandability, which comes through an explicit, perceivable conceptual model. Affordances specify the range of possible activities, but affordances are of little use if they are not visible to the users. Hence, the art of the designer is to ensure that the desired, relevant actions are readily perceivable.
+
+Don’t confuse affordances with perceived affordances.
+Don’t confuse affordances with conventions. Affordances reflect the possible relationships among actors and objects: they are properties of the world. Conventions, conversely, are arbitrary, artificial, and learned. Once learned, they help us master the intricacies of daily life, whether they be conventions for courtesy, for writing style, or for operating a word processor. Designers can invent new real and perceived affordances, but they cannot so readily change established social conventions.[^perceivedaffordance03affordance]
+
+
 [^neuro&behavior01affordance]:Osiuraka, François, Yves Rossettic, and Arnaud Badet. June 1st 2017 _"What is an affordance? 40 years later."_ Neuroscience and Biobehavioral Reviews, volume 77 :pages 403-417. Accessed january 16th 2024.
 https://www.sciencedirect.com/science/article/pii/S0149763416305061 
+
+[^perceivedaffordance03affordance]:Norman, Donald A. 1999. *‘Affordance, Conventions, and Design’*. Interactions 6 (3): 38–43. https://doi.org/10.1145/301153.301168.
 
 
 ## Agency 
@@ -83,7 +103,7 @@ SOAP API, in comparison to REST API, is more rigid in its structure and only ret
 GraphQL is a query language signifying that the developer can use queries to request specific data. The string is sent to the server for interpretation and responds to the request with a JSON. It was developed by Facebook[^meta15graphql] and is the most modern standard for APIs after REST. It allows developers to avoid over-fetching data and only collecting what they request.[^graphql24basics] The developer can specify the structure of the response it needs for certain tasks. Additionally, GraphQL can retrieve the required data with a single request which reduces redundant communication between the client and the server.
 
 ### APIs and Art
-Some museums have incorporated new technologies in the recent decade to provide more accessibility. One of the way to acheive that was by openly sharing a  database of their art collection online accessible to anyone through thier API. For example, the Metropolitan Museum of Art introduced the Metropolitan Museum of Art Met Collection API with an Open Access policy, allowing the distribution of their collection for the public domain. The data also includes relevant information on the history, artist and other details along with the works.[siegel18APIs] This reflects the integration of APIs in the art world and its impact on how we consume art. 
+Some museums have incorporated new technologies in the recent decade by [digitalizing](../main/glossary.md#Digitization) their collections to provide wider accessibility. By openly sharing a database of their art collections online, anyone with Internet access can view the collections through the museum's API. For example, the Metropolitan Museum of Art introduced the Metropolitan Museum of Art Met Collection API with an Open Access policy, allowing the distribution of their collection for the public domain. The data also includes relevant information on the history, artist and other details along with the works.[siegel18APIs] This reflects the integration of APIs in the art world and its impact on how we consume art. 
 
 [^wiki24api]: Wikipedia. 2024. "API". Accessed January 29, 2024. https://en.wikipedia.org/wiki/API
 [^aws24what]: 2024. "What is an API (Application Programming Interface)?" AWS. Accessed January 29, 2024. https://aws.amazon.com/what-is/api/.
@@ -226,13 +246,15 @@ This chip needs to be powered by a coin battery, best known as a CMOS battery. W
 
 ## CMYK
 
-CMYK is a color model used in printing. It is an abbreviation of **C**yan, **M**agenta, **Y**ellow, and **K**ey (black, which refers to printing plates being keyed or aligned to the black printing plates) which provides a more reliable reproduction of images that RGB cannot provide. It is also used quite a bit thanks to its incredible accuracy that it can hold. While it is not the most accurate with darker tones (leading it to become lighter in rare cases) it still holds up to be the most accurate.
+CMYK is a color model used in printing. It is an abbreviation of **C**yan, **M**agenta, **Y**ellow, and **K**ey[^pham07cmyk] (black, which refers to printing plates being keyed or aligned to the black printing plates) which provides a more reliable reproduction of images that RGB cannot provide. It is also used quite a bit thanks to its incredible accuracy that it can hold.[^liu19cmyk] While it is not the most accurate with darker tones (leading it to become lighter in rare cases) it still holds up to be the most accurate.
 
 While it has many uses, the most used ways are in medicine and printing processes. 
 
 For medical use, it is used as an analysis tool as you can adapt the CMYK models for use to find certain stains in the cells. For example, in a study conducted to attempt to be able to find IHC (immunohistochemistry) stains, researchers edited the CMYK model to be able to read better the IHC as well as being able to tell STAT3 levels easier thanks to the better Yellow channel.
 
-For printing, as it’s most common usage. It is used side by side with Pantone as they are the two printing styles that offer the most accurate version of the original image/as the creator intends. As screens normally use RGB, most software defaults with RGB which makes it so that printers normally turn the image into CMYK for easier printing.
+For printing, as it’s most common usage. It is used side by side with Pantone as they are the two printing styles that offer the most accurate version of the original image/as the creator intends.[^plumgrove07cmyk] As screens normally use RGB, most software defaults with RGB which makes it so that printers normally turn the image into CMYK for easier printing.
+
+![cmyk](images/cmyk-perez.png)
 
 [^pham07cmyk]: Pham, Nhu-An, Andrew Morrison, Joerg Schwock, Sarit Aviel-Ronen, Vladimir Iakovlev, Ming-Sound Tsao, James Ho, and David W Hedley. “Quantitative Image Analysis of Immunohistochemical Stains Using a CMYK Color Model.” Diagnostic Pathology, February 27, 2007. https://diagnosticpathology.biomedcentral.com/articles/10.1186/1746-1596-2-8. 
 
@@ -266,6 +288,15 @@ The ongoing innovation in codec technology, including the development of both pr
 
 
 
+
+## Compression
+Compression (or in this case Data Compression) is a process that computers[link] have for a multitude of reasons but mainly to reduce the size of digital files.[^adobecompression] There are many types of compression; image compression, audio compression, and file compression just to name a few. For all of the previously stated, they can either have [lossy](../main/glossary.md#lossy) or [lossless](../main/glossary.md#lossless) compression. 
+
+The main idea of compression is for the selected file to have more effective density and be able to communicate the information internally more easily (for example, open a file more easily or transfer the file around the computer).[^lelewer97compression] Data compression is extremely important for the effectiveness of a computer because of reasons such as less space taken in the storage which means the file will use less RAM (memory) when opening.[^tuteja04compression]
+
+[^adobecompression]: Adobe. “Lossy vs Lossless Compression: Differences & Advantages | Adobe.” www.adobe.com, n.d. https://www.adobe.com/uk/creativecloud/photography/discover/lossy-vs-lossless.html.
+[^lelewer97compression]: Lelewer, Debra A., and Daniel S. Hirschberg. “Data Compression.” ACM Computing Surveys 19, no. 3 (September 1987): 261–96. https://doi.org/10.1145/45072.45074.
+[^tuteja04compression]: Tuteja, Deepa, Ethan Miller, and Scott Brandt. “MRAMFS: A Compressing File System for Non-Volatile RAM †,” 2004. https://users.soe.ucsc.edu/~elm/Papers/mascots04mramfs.pdf.
 
 //need to delete, info now under human-computer_interaction.md
 
@@ -357,8 +388,9 @@ In the 1990s, due to the pop culture popularization of the term, the definition 
 
 [^dclark10wiki]: David Clark, 2010, Characterizing cyberspace: past, present, and future, Accessed January 29, 2024
 
-## Data Science
+## Data Mining
 Data Mining is when data scientists use big data to find patterns that are novel and/or useful for businesses or individuals who want to learn more in-depth information about data collected. For instance, a data scientist could look at a real estate database containing leases and permits and find out patterns that could predict purchasing patterns for  companies [^Sipes].
+
 Data mining can be particularly useful because you don’t necessarily need to know the question you are asking in order to find answers. Using a top-down approach, data scientists are able to find patterns and create analysis of said patterns without a particular question in mind. This way companies can find ways to identify novel, useful, or understandable correlations and patterns in data sets
 without having a particular question in mind. Companies can find answers like correlative purchases (like how men buying diapers often buy beer as well [^Chung]) or new patterns (who will repay a loan). 
 
@@ -371,12 +403,21 @@ without having a particular question in mind. Companies can find answers like co
 
 [^Slobogin]: Slobogin, Christopher. 2008. “Government Data Mining and the Fourth Amendment.” The University of Chicago Law Review 75, no. 1 (2008): 317–41. 
 
+## Data Science
+Data Science is the use of datasets ([big data](bigdata.md)) by data scientists to analyze information and answer questions through a combination of statistics and computer science[^Blei2017Cite]. These analyses are most often used to make predictions about consumer patterns. Data science is also used by governments worldwide for ‘security’ purposes and scientific research. [^Floridi2016Cite] 
+
+However, data science could be applied to almost anything that involves the study and use of collected data. [The US Coast Guard](http://www.jstor.org/stable/resrep26526), for instance, plans to use data science for automating fishery observations, streamlining and perfecting search and rescue missions, and improving recruitment of talented employees[^Davenport2020Cite]. Data science is an incredibly powerful tool that can be used in countless fields. 
+
+[^Blei2017Cite]: Blei, David M., and Padhraic Smyth. “Science and Data Science.” Proceedings of the National Academy of Sciences of the United States of America 114, no. 33 (2017): 8689–92.
+[^Davenport2020Cite]: DAVENPORT, AARON C., MICHELLE D. ZIEGLER, ABBIE TINGSTAD, KATHERINE ANANIA, DANIEL ISH, NIDHI KALRA, SCOTT SAVITZ, RACHEL LIANG, and MELISSA BAUMAN. 2020. Decoding Data Science: The U.S. Coast Guard’s Evolving Needs and Their Implications. RAND Corporation. 
+[^Floridi2016Cite]: Floridi, Luciano, and Mariarosaria Taddeo. 2016. Introduction: What Is Data Ethics? Philosophical Transactions: Mathematical, Physical and Engineering Sciences 374, no. 2083: 1–5.
+
 ## Deep fakes
 
-•	synthetic media
-•	vary in their form and creation ( text, image, audio, video)
-•	automatically synthesized by a machine-learning system.
-•	Can manipulate reality
+- synthetic media
+- vary in their form and creation ( text, image, audio, video)
+-	automatically synthesized by a machine-learning system.
+-	Can manipulate reality
 
 “ for as long as we have been recording the sights and sounds around us, we have been manipulating them”(farid hany)
 We are bombarded with manipulated imagery from the humorous to the absurdly unrealistic body images in fashion magazines and Instagram, weaponized in the form of non-consensual pornography, political attack ads, scientific fraud, misrepresentations in the media, and disinformation campaigns design to sow civil unrest and disrupt democratic elections
@@ -384,9 +425,89 @@ he most recent development in digital tampering , in the form of automated AI-po
 leveraging modern tools in machine learning, computer graphics and computer vision has lowered the skill and time barriers for manipulating content.
 While the ability to alter and change and delete content media is not new, the true power of deep fakes is the widespread access to sophisticated technology that previously was only in the hands of Hollywood-style studios and state-sponsored actors, along with the instantaneous and global distribution channels afforded by social media. [^hany01deepfakes]
 
-[^hany01deepfakes]: 
-Farid, Hany. September 20th 2020, “creating, using, misusing, and detecting deep fakes”, Journal of Online trust & safety, volume 1, no.4. Accessed February 12th 2024.
+## Upside of deep fakes 
+
+Deep fakes don't create new problems so much as make existing problems worse.
+Journalism, education, individual rights, democratic systems, and voting protocols have long been vulnerable. Deep fakes might just be the straw that breaks them. And there lies opportunity for repair. 
+
+Often what's been missing is the political will to make the changes and corrections happen. Perhaps these small incursions into our technologies and civic institutions haven't been significant enough to foment a meaningful appetite for reform. Or perhaps lawmakers and the public simply can't get angry about ephemeral and sometimes difficult to describe harms to concepts like due process, data integrity, and collective intelligence that are not felt viscerally. Sometimes we just need a push. And deep fakes make for a memorable bully.
+
+The potential upside of deep fakes is that they might help muster the political will to address the larger, structural problems made worse by the inability to trust what we see and hear. In other words, maybe an effective way to respond to the scourge of deep fakes isn't to target the creation and use of deep fakes themselves, but rather to focus on strengthening the social and political institutions they disrupt. Now would be a good time to focus on institutional inoculation, fortitude, redundancy, and resiliency. Deep fakes are a symptom of deep problems. 
+
+### Education
+
+We should not be training students to take standardized tests and memorize factors and formulae outside of the contexts in which they are meaningful. We should be teaching students (and continue to train ourselves) to evaluate facts, test systems, and challenge accounts by examining alternative perspectives. This isn't about the subjectivity of all stories or the relativity of truth. We are not relativists when it comes to facts and cultural narratives. But we are realists. And what we learn in the study of humanities and law is how stories work to sustain or undermine power. We might as well acknowledge this as one-way deep fakes function and work from within that structure to talk back to them. Stories (fake or not) will never go away. We have to learn how to have the narrative upper hand to produce critical thinkers and win the battle for truth. To students schooled this way, deep fakes may be annoying-they might even be amusing-but they will not be quite as disruptive to our children's hopeful future if education trains them to be curious, collaborative, skeptical, and productive.
+
+### Media 
+
+We don't pay for journalism as much (or at all) anymore. And we can curate our own news by selecting from hundreds of television channels, shows, and radio stations, to attend to the one that confirms our own views and comports with our own politics. As much as we may praise the information floodgate that is the internet, platforms like Facebook and "Twitter... encourage a mind-set antithetical to journalistic inquiry: They prize image over substance and 'cheap dunks' over reasoned debate. In other words, our personalized, networked, firehose news feeds are rich soil for cultivating deep fakes. 
+We should collectively encourage and invest in trusted journalism and reestablish institutional norms of authentication and verification-for example, fact checking that requires standards of proof. Newspapers should not be driven to depend on bottom-line driven platforms like Facebook or networks like Google for advertising dollars. Eyeballs demand catchy headlines and lots of photographs. But click bait luring readers to a non-story with lots of pop-up advertisements is a videogame, not news.
+We need to commit to investigative journalism and photo journalists whose professionalization as truth seekers and truth tellers are so central to our democracy we protected the press from government interference
+
+### Democratic institutions
+
+Lawmakers could start by better pursuing electoral integrity, which includes ensuring more people vote and their votes count. Increasing the number of voters might help dilute the negative effect a deep fake would produce and have the additional benefit of better ensuring a representative democracy. Political, social, and economic inequality, bred through the alienation of individuals from their communities of support, feeds peoples' receptiveness to disinformation. As Claire Wardle writes, "When humans are angry and fearful, their critical thinking skills diminish." With more participation and enthusiasm for self-government, the benefits of which should begin with those who have the least, the governmental institutions that sustain us will work for us all. And the deep fakes that aim to dismantle them will be outvoted by those who believe and know better.[^upside02deepfakes]
+
+## Regulations of deep fakes
+
+### 1-	Deep fake pornography
+
+**What is it?**
+
+Revenge porn and celebrity deep fakes. Revenge porn refers to sexually explicit material which is created and widely disseminated to humiliate, threaten, or make other harm to a person, who has broken off the relationship. Lately, revenge porn expanded to similar deep fake sex videos where nonconsensual pornographic deep fakes are distributed by hackers or anyone seeking financial gain or notoriety rather than revenge for the lost relations. Another category of deep fake sex content refers to face-swapped celebrity porn where celebrity images are superimposed on the bodies of individuals engaged in sexual acts.
+From the ethical and normative perspective, deep fake sex videos first and foremost are seen as a new form of sexual privacy invasion. Sexual privacy serves an invaluable function in the society: it facilitates identity development, intimacy and equality. Furthermore, sexual privacy forms one of the cornerstone pillars of human agency and autonomy. Deep fake sex videos have additional negative ramifications. In particular, revenge porn could oftentimes be one aspect of sexual humiliation and exploitation, physical, mental or financial abuse of individuals. Revenge porn and deep fake sex videos could be witnessed also in corporations as a tool for sexual exploitation or workplace discrimination.
+
+**Regulations?**
+
+3 major issues in legal practice 
+
+*1.	Difficult to identify the victim.*
+Differently from porn videos, deep fake pornography involves three (not two) individuals: the person(s) whose body is truthfully being represented and the person whose face has been added by AI. In either case, none of the individuals concerned had given consent; and therefore both could raise claims in relation to the violation of self-image rights. In jurisdictions where pornography is protected by copyright, authors of the movie may raise claims related to the modification of the video.
+
+*3.	Identification of the wrongdoer*
+Is it the person who created the original video, created deep fake, or uploaded it to the site and distributed online? The situations may vary depending on whether the person creating the original and the deep fake video and the person uploading and distributing the deep fake is not the same. Besides, the potential defendant is likely to argue that one cannot sue someone for exposing the intimate details of someone’s life when it is not that person’s personal life that is in fact being exposed.
+
+*4.	Liability problems*
+It may be challenging to impose the liability creating, distributing, and storing deep fake sex content. Online platforms hosting such content may be not able or willing to react to the requests to remove the content. Should the court order be necessary? The plaintiff may also face jurisdictional and choice of law hurdles.
+
+### 2-	Deep fakes in political campaigns 
+
+**What is it?**
+
+Deep fakes can have profound negative consequences to democracies: deep-faked news reports could be aimed at targeting the reputation of certain individuals, portray fake events (e.g., faked terrorist attack) or impact such democratic processes as electoral campaigns or other socially significant events. Deep fakes may be used as catalyst to erode trust in political institutions, deepen division among social groups. If used by hostile governments, deep fakes could even pose threats to national security or impair international relations.
+The danger of deep fakes is that technology enables one to present to others an alternative reality presenting people saying and doing things they never did, thus deceiving an unaware public. This makes an old age saying seeing is believing no longer valid. The problem with deep fakes is that their impact is hard to measure. In fact statistics showing how many viewers viewed or shared a deep fake may not reveal the real impact to those viewed. Some authors suggest that fake news (including deep fakes) shared on social media tend to have a stronger effect than ordinary political campaigns. Another recent finding suggests that people overestimate their ability to separate the truth from false, that people overestimate political news that are in line with their beliefs and discount news which are contrary to their beliefs. In the post-truth political environment, this translates into the trend of political communication where the crucial concern becomes not what is moral, ethical or factual, but what works.
+
+**Regulations?**
+
+Certain sanctions for disseminating false information could be imposed in criminal laws. However, granting excessive “censorship” rights to administrative agencies could be challenged as an unconstitutional restriction of the freedom of speech. It may be argued that the “market” will be able to react to the realities of fake news in the political sphere. Arguably, politicians whose images are used in creating defamatory or false deep fakes could seek remedies entrenched in tort laws or copyright law. The problem with this argument is that it does not provide efficient remedies to clean-up the detrimental consequences caused by videos that have become viral.
+
+### 3-	Commercial uses of deep fakes 
+
+**What is it?**
+
+Deep fake technology has enormous beneficial potential in commercial applications. Creation of video content will become way cheaper and will undoubtedly facilitate a wave of new business models and also facilitate new forms of communication. One possible unintended consequence could be the emergence of “deep fake data silos” on the internet which control how deep fakes are created or disseminated. Commercial uses of deep fakes are socially beneficial as long as deep fake technologies are used for lawful purposes. There may nonetheless be situations where the content is created without getting the necessary right-holder’s consent. In such cases, the suffering party should be able to rely on the wide array of traditional legal concepts and theories in contract or tort law.
+
+**Regulations?**
+
+Commercial uses of deep fakes are socially beneficial as long as deep fake technologies are used for lawful purposes. There may nonetheless be situations where the content is created without getting the necessary right-holder’s consent. In such cases, the suffering party should be able to rely on the wide array of traditional legal concepts and theories in contract or tort law. Furthermore, in situations where there is disagreement as to the legal ownership of the new content created using GAN technologies, parties should be able to rely on the existing rules on initial ownership or work-made-for-hire doctrine.
+
+### 4-	Creative deep fakes 
+
+**What is it?**
+
+Deep fake technology opens endless opportunities to use that technology for creative and scientific purposes by students or artists. It could be seen as a medium which facilitates creative interactions, political debates and forms a constitutive part of free speech. One of the unintended consequences of using deep fakes technology in creative or educational setting is that it could lead to bullying among children at schools.
+
+**Regulations?**
+
+From the legal perspective, besides invasion to privacy, a number of other fundamental legal doctrines from contract, tort, or property law could be relevant in disputes concerning the legality of creative deep fakes. In addition, creative deep fakes may lead to certain IP-related controversies. More specifically, from the copyright law perspective, it may be questioned whether the creator of a deep fake could claim copyright authorship of the newly created deep fake or whether the use of the original content (one or multiple copyrighted works) amounts to an infringement of copyright and/or image rights. Furthermore, it may be questioned whether the creator of a deep fake could rely one certain doctrines that would exempt from liability. For instance, in the case of copyright infringement, the creator of a deep fake could invoke statutory exemptions such as parody or satire.[^regulations03deepfakes]
+
+
+[^hany01deepfakes]:Farid, Hany. September 20th 2020, “*creating, using, misusing, and detecting deep fakes*”, Journal of Online trust & safety, volume 1, no.4. Accessed February 12th 2024.
 https://www.tsjournal.org/index.php/jots/article/view/56 
+
+[^upside02deepfakes]:Silbey, Jessica, and Woodrow Hartzog. 2018. ‘*The Upside of Deep Fakes Symposium - Truth Decay: Deep Fakes and the Implications for Privacy, National Security, and Democracy*’. Maryland Law Review 78 (4): 960–66.
+
+[^regulations03deepfakes]:Meskys, Edvinas, Julija Kalpokiene, Paul Jurcys, and Aidas Liaudanskas. 2019. *‘Regulating Deep Fakes: Legal and Ethical Considerations’*. SSRN Scholarly Paper. Rochester, NY. https://papers.ssrn.com/abstract=3497144.
 
 
 
@@ -417,7 +538,7 @@ The DNS is a database that contains information on namespaces and provides the b
 
 
 #### Seven Top-Level Domain Names (TLD) That Divide The Internet
-To host a website on the Internet, we are required to buy a root domain which includes the domain name and the TLD. The combination creates a website address such as _google.com_. Originally, there were seven top-level domain names that reflected the nature of the organization behind the website. 
+To host a website on the Internet, we are required to buy a root domain which includes the domain name and the TLD. The combination creates a website address such as _google.com_. Originally, seven top-level domain names reflected the nature of the organization behind the website.
 - **.com** : Commercial use.
 - **.edu** : Educational organizations.
 - **.gov** : Government websites.
@@ -426,13 +547,13 @@ To host a website on the Internet, we are required to buy a root domain which in
 - **.org** : Noncommercial organizations (before 1996).
 - **.int** : International organizations.
 
-Today, other domains were added with the expansion of the Internet, allowing for a larger pool of available namespaces.[^google06dnsbind] Big companies like Apple, Google, Audible, Amazon, Best Buy, and more own TLDs that are reserved strictly for their use and inaccessible to the public.
+Today, other domains were added with the expansion of the Internet, allowing for a larger pool of available namespaces.[^google06dnsbind] Big companies like Apple, Google, Audible, Amazon, Best Buy, and more own TLDs that are reserved strictly for their use and inaccessible to the public. [E-commerce](../main/glossary.md#E-commerce) businesses rely on the DNS to ensure their clients can easily navigate to their websites.
 
 ### DNS and New Media
 The obvious relation between the DNS and new media is through everything that needs to connect to the Internet.
 Therefore, all new media platforms in the form of websites, applications and other online formats require IP addresses and a corresponding domain name. Without the DNS, it would be much harder to navigate the Web and access new media content.
 
-#### TLDs and New Media Art
+#### Top-Level Domains and New Media Art
 The DNS allows artists to choose namespaces that correspond to their work and specializations. This creates room for artists to express themselves by using the DNS and namespaces as a way to establish a unique name reflecting their brand.
 
 Several examples of top-level domains available for artists, designers and creators to buy include:
@@ -503,14 +624,19 @@ N.d.
 
 ## Ethernet 
 
-Ethernet is a wired network technology that connects computers to other devices using cables and protocols. It was invented in the early 1970s by Xerox and became a standard in 1983.
-It has different types and speeds depending on the cable and device used. The most common types are twisted pair, coaxial, and fiber optic cables. The most common speeds are 10 Mbps, 100 Mbps, 1 Gbps, and 10 Gbps. [^BasuMallick23ethernet]
+Ethernet is a wired network technology that connects computers and other devices within a local area network (LAN) using cables and protocols. It was invented in the early 1970s by Xerox and became a standard in the 1980s. Ethernet operates by using a set of standards and protocols that define how data is transmitted over the network. It has different types and speeds depending on the cable and device used. The most common types of Ethernet cables include twisted pair, coaxial, and fiber optic cables. The most common Ethernet speeds are 10 Mbps, 100 Mbps, 1 Gbps, and 10 Gbps, with never standards offering even faster data rates.[^BasuMallick23ethernet]
 
-Ethernet usually offers faster internet connection than Wi-Fi because of its use of cables rather than radio waves which can be less stable and secure.[^BusinessInsider24ethernet]
+Ethernet usually offers faster [Internet](../main/glossary.md#internet) connection than Wi-Fi because of its use of cables rather than radio waves which can be less stable and secure.[^BusinessInsider24ethernet]
 
+Ethernet's relevance to new media lies in its ability to provide a stable and high-performance backbone for various digital applications and services. In the context of new media, Ethernet plays a crucial role in enabling the seamless delivery of multimedia content, such as streaming video, online gaming, and video conferencing, which are integral to many modern communication and entertainment platforms.[^Kizza13ethernet]
 
-[^BasuMallick23ethernet]: BasuMallick, Chiradeep. 2023. “What Is Ethernet? Definition, Types, and Uses.” Spiceworks. Accessed January 25. https://www.spiceworks.com/tech/networking/articles/what-is-ethernet/.
-[^BusinessInsider24ethernet]: Business Insider. 2024. “What Is Ethernet? the Wired Network Connection, Explained.” Business Insider. Accessed January 25. https://www.businessinsider.com/guides/tech/what-is-ethernet.
+Furthermore, Ethernet's reliability and security features make it a preferred choice for businesses and organizations that require robust and secure network infrastructure to support their digital operations, including e-commerce, cloud computing, and enterprise-level applications.[^Tanenbaum11ethernet]
+
+[^BasuMallick23ethernet]: BasuMallick, Chiradeep. 2023. “What Is Ethernet? Definition, Types, and Uses.” Spiceworks. https://www.spiceworks.com/tech/networking/articles/what-is-ethernet/.
+[^BusinessInsider24ethernet]: Business Insider. 2024. “What Is Ethernet? the Wired Network Connection, Explained.” Business Insider. https://www.businessinsider.com/guides/tech/what-is-ethernet.
+[^Kizza13ethernet]: Kizza, Joseph Migga. "Ethernet and the Local Area Network." In Guide to Computer Network Security, 149–72. Computer Communications and Networks. Springer, London, 2013. https://doi.org/10.1007/978-1-4471-4543-1.
+[^Tanenbaum11ethernet]: Tanenbaum, Andrew S., and David J. Wetherall. 2011. Computer Networks. 5th ed. Pearson. 
+
 
 ## Facial Recognition
 
@@ -542,13 +668,23 @@ Fans and Fandoms are very known for expressively displaying their love for the m
 
 ![Firewall](images/firewall-tran.jpg)
 
-A firewall is like a security gate that controls what comes in and out. It is a network security device that monitors the incoming and outgoing network traffic and decides whether to allow or block them based on a set of defined security rules. 
-There are different types of firewalls, such as proxy, stateful inspection, UTM, next-generation, cloud-native firewalls and more, each with different features and functions. [^Cisco24firewall]
+A firewall is like a security gate that controls what comes in and out. It is a [network security](../main/glossary.md#networksecurity) device that monitors the incoming and outgoing network traffic and decides whether to allow or block them based on a set of defined security rules. There are different types of firewalls, such as proxy, stateful inspection, UTM, next-generation, cloud-native firewalls and more, each with different features and functions. [^Cisco24firewall]
 
 A firewall has many benefits, such as blocking spyware, stopping virus attacks, promoting privacy, and network traffic, and preventing hackers from accessing the network. [^Spiceworks24firewall]
 
+In the context of new media, firewalls play a crucial role in securing the infrastructure that supports various digital platforms and services. As new media increasingly relies on internet-based technologies, firewalls become essential for protecting against cyber threats, ensuring the confidentiality, integrity, and availability of sensitive data, and maintaining the overall security of the digital ecosystem.[^Whitman18firewall]
+
+Firewalls are particularly important for [e-commerce](../main/glossary.md#e-commerce) platforms, where they safeguard the transmission of financial and personal information between customers and businesses. They also protect against distributed denial-of-service (DDoS) attacks, which can disrupt the availability of online services.[^Vacca17firewall]
+
+Furthermore, firewalls are essential for securing cloud-based new media applications, where data and resources are hosted on remote servers. They help to establish a secure perimeter around the cloud infrastructure, preventing unauthorized access and ensuring the privacy and integrity of the data.[^Rittinghouse16firewall]
+
 [^Cisco24firewall]:“What Is a Firewall?” n.d. Cisco. Accessed January 29, 2024. https://www.cisco.com/c/en/us/products/security/firewalls/what-is-a-firewall.html.
 [^Spiceworks24firewall]: “What Is a Firewall? Definition, Key Components, and Best Practices.” n.d. Spiceworks (blog). Accessed January 29, 2024. https://www.spiceworks.com/it-security/network-security/articles/what-is-firewall-definition-key-components-best-practices/.
+[^Whitman18firewall]: Whitman, Michael E., and Herbert J. Mattord. 2018. Principles of Information Security. 6th ed. Cengage Learning. 
+[^Vacca17firewall]: Vacca, John R. 2017. Computer and Information Security Handbook. 3rd ed. Morgan Kaufmann. 
+[^Rittinghouse16firewall]: Rittinghouse, John W., and James F. Ransome. 2016. Cloud Computing: Implementation, Management, and Security. CRC Press. 
+
+
 
 ## Futurism
 
@@ -616,6 +752,18 @@ GitHub's development process is distributed, allowing developers to collaborate,
 [^github24wikis]: GitHub Docs. 2024. “About wikis.” Accessed January 2. https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis.
 
 [^kinsta24what]: Kinsta. 2024. ”What Is GitHub? A Beginner's Introduction to GitHub.” Accessed January 2. https://kinsta.com/knowledgebase/what-is-github/.
+
+## GPU
+A Graphic Processing Unit (GPU) is a device originally designed to perform rendering for computers to be able to make 3D visual effects on 2D surfaces.[^parker17gpu] Not to be confused with CPU [link], the GPU is tasked to run parallel to it to complete the CPU's tasks with minimum latency. Nowadays, GPU is used in countless industrial applications instead of CPU doing all the work.[^brodtkorb13gpu]
+
+Being officially created by NVIDIA™ Corporation, they made the first ever GPU called the GeForce 256 on August 31, 1999.[^nvidia99gpu] It was a decision that would take months or years to be able to master and do its job as programming the machine would take a lot of effort. 
+
+The GPU is used for graphical rendering, machine learning[link], and video editing programs requiring any mathematical calculations done rapidly (as it is the GPU’s specialty)[^amazongpu]. The GPU is also well to be able to raise the effectiveness of many compute-intensive tasks. GPUs are mostly used for gaming, professional visualization (such as video editing programs, drawing programs, and other types of visualization applications), machine learning, blockchain (such as [NFTs](../main/glossary.md#nft)), and simulations.
+
+[^parker17gpu]: Parker, Michael. 2017. Digital Signal Processing 101 : Everything You Need to Know to Get Started. Oxford, United Kingdom: Newnes.
+[^brodtkorb13gpu]: Brodtkorb, André R., Trond R. Hagen, and Martin L. Sætra. 2013. “Graphics Processing Unit (GPU) Programming Strategies and Trends in GPU Computing.” Journal of Parallel and Distributed Computing 73 (1): 4–13. https://doi.org/10.1016/j.jpdc.2012.04.003.
+[^nvidia99gpu]: NVIDIA. 1999. “NVIDIA Launches the World’s First Graphics Processing Unit: GeForce 256.” Www.nvidia.com. NVIDIA. August 31, 1999. https://www.nvidia.com/object/IO_20020111_5424.html.
+[^amazongpu]: Amazon. n.d. “What Is a GPU? - Graphics Processing Unit Explained - AWS.” Amazon Web Services, Inc. https://aws.amazon.com/what-is/gpu/.
 
 
 ## GUI (Graphical User Interface)
@@ -820,6 +968,18 @@ Information architecture is more and more significant because we live in a world
 [^usibility19information_architecture]: Usability.gov. 2019. “Information Architecture Basics .” Usability.gov. 2019. 
 
 
+# Interactivity:
+
+Interactivity originates from the word “interaction”  which in itself is a word with a plethora of meanings depending on the situation it is being spoken about. It can be interaction between two people, interaction between one person and something like a computer or AI or it can be an interaction between a person and an object. This also extends to creatures and their interactions with things. Thus, interactivity when spoken about its influence on new media is the active participation of an individual and their actions to control a computer or video program for it to respond in the way they wish it to. With this human input, the computer gives an output that reflects what the input is and tries to find an appropriate response that corresponds to the program being used to get this response.[^jensen98interactivity] Interactivity is thus the interaction between human and computer to get an output that reflects the input. Interactivity is used on a daily basis no matter what program or website is being used, there is always a desired reaction and output that the individual working with the computer is looking for and through all the knowledge the computer already has, this interaction becomes a lot easier. Different websites and programs were built differently and thus require different interactions to work with them, thus if something within the computer is well done, the outputs from the input will be more accurate and easy to follow, while a program or website made less user-friendly is more likely to need more than just interaction and input to get the desired output.[^heeter13interactivity] 
+
+An example of interactivity can be as simple as clicking the mouse button and for the computer to direct the cursor and click where the individual intended the action to be. But interactivity can also be seen when using a website that requires the individual to click on different tabs to get new layers of the website, or when there are user generated content like images, reviews and videos that the individual can click on and the computer may zoom in or send them to a new page to look into it further. Interactivity can also be used to create contacts and share things with others not only through the computer but the computer interacts with the input of the individual to send them the right information to create these new actions within a website or within a program.[^siemieniecka17interactivity] Therefore, any interactive media within a computer, such as a website and whatever content is within it, requires interactivity from the individual to the computer to get the correct outputs that make the media work for the individual.
+
+[^jensen98interactivity]: Jensen, Jens F. 1998. “Tracking a New Concept in Media and Communication Studies,” *Nordicom Review* 19 (1): 185–204. https://www.diva-portal.org/smash/get/diva2:1534605/FULLTEXT01.pdf.
+
+[^heeter13interactivity]: Heeter, Carrie. 2013. “Interactivity in the Context of Designed Experiences.” *Journal of Interactive Advertising* 1 (1): 3–14. https://doi.org/10.1080/15252019.2000.10722040.
+
+[^siemieniecka17interactivity]: Siemieniecka, Dorota, Wioletta Kwiatkowska, Kamila Majewska, and Małgorzata Skibińska. 2017. “The Potential of Interactive Media and Their Relevance in the Education Process.” *International Journal of Psycho-Educational Sciences* 6 (3): 1-10. https://files.eric.ed.gov/fulltext/EJ1254649.pdf.
+
 ## Internet
 
 The Internet is a global network of interconnected computer networks that enables individuals around the world to communicate and exchange information. [^Zare24internet1] 
@@ -833,15 +993,15 @@ The Internet has empowered ordinary citizens by making it easier for them to pro
 
 ![internet](images/internet-zare.PNG)
 
-[^Zare24internet1]: "What Is the Internet?" Spiceworks. Accessed January 28, 2024. https://www.spiceworks.com/tech/networking/articles/what-is-the-internet/.
+[^Zare24internet1]: Spiceworks. "What Is the Internet?" Accessed January 28, 2024. https://www.spiceworks.com/tech/networking/articles/what-is-the-internet/.
 
-[^Zare24internet2]: Oxford English Dictionary. "Internetted." Online edition. Oxford University Press. (Subscription or participating institution membership required.) Nineteenth-century use as an adjective.
+[^Zare24internet2]: Oxford English Dictionary. "Internetted." Online edition. Oxford University Press. Nineteenth-century use as an adjective.
 
-[^Zare24internet3]: Goswami, S. "The Internet Protocol." In Internet Protocols, published by Springer, Boston, MA, 2003. https://doi.org/10.1007/978-1-4615-0385-9_2.
+[^Zare24internet3]: Goswami, S. 2003. "The Internet Protocol." In *Internet Protocols*, published by Springer, Boston, MA. https://doi.org/10.1007/978-1-4615-0385-9_2.
 
-[^Zare24internet4]: Rust, Roland T., and Sajeev Varki. "Rising from the ashes of advertising." Journal of Business Research 37, no. 3 (1996): 173-181. https://doi.org/10.1016/S0148-2963(96)00067-7.
+[^Zare24internet4]: Rust, Roland T., and Sajeev Varki. 1996. "Rising from the Ashes of Advertising." *Journal of Business Research* 37, no. 3: 173-181. https://doi.org/10.1016/S0148-2963(96)00067-7.
 
-[^Zare24internet5]: Jenkins, Henry, Ravi Purushotma, Margaret Weigel, Katie Clinton, and Alice J. Robison. Confronting the Challenges of Participatory Culture: Media Education for the 21st Century. The MIT Press, 2009. DOI: https://doi.org/10.7551/mitpress/8435.001.0001. ISBN electronic: 9780262258951.
+[^Zare24internet5]: Jenkins, Henry, Ravi Purushotma, Margaret Weigel, Katie Clinton, and Alice J. Robison. 2009. *Confronting the Challenges of Participatory Culture: Media Education for the 21st Century*. The MIT Press. DOI: https://doi.org/10.7551/mitpress/8435.001.0001. ISBN (electronic): 9780262258951.
 
 ## Iteration:
 The word iteration generally refers to an instance of a process in which repetition is fundamental. The iteration process aims to exploit repetition to take advantage of the information gathered during each iteration. However, in certain fields such as mathematics, computation and design, the word has acquired more specific meanings for each field. In fact, in various areas comprising product development, such as: design, construction, manufacturing and software (among others), the importance of the iteration process is well-recognised.[^perspectivesOnIteration] below are more specific definitions of *iteration*:
@@ -862,6 +1022,15 @@ This aims to showcase the importance of iteration in design, and how failure and
 [^OxfordIteration]: Oxford University Press. Oxford Advanced Learner’s Dictionaries. “Iteration” Accessed March 6 2024. https://www.oxfordlearnersdictionaries.com/us/definition/english/iteration
 
 [^wrightBrosIteration]: Shlien, D. Joseph. June 18, 2000. “The Wright Brothers as Design Engineers” presented at the *ASEE Annual Conference (Session 3225)*. ASEE PEER. Accessed March 6 2024. https://peer.asee.org/8853
+
+## JPEG
+JPEG most commonly refers to the .JPG & .JPEG digital file formats, widely used for digital imagery, it is an abbreviation for Joint Photographic Experts Group, mostly known for its lossy compression format. “JPEG compression is performed by a series of operations: transform (DCT), quantization, zigzag scanning, differential pulse code modulation (DPCM), and entropy coding. Decompression is accomplished by performing inverse steps in an inverse order.”[^JPEG-compression] It was released in 1992 and standardized in 1994 by the International Organization for Standardization (under ISO/IEC 10918-1), with the goal of creating a compression standard for digital imagery with minimal quality loss at a moment where the use of digital images was often limited due to storage or data transmission costs.[^JPEG-origins] Unlike lossless compression formats, JPEG selectively discards data while compressing for significant file size reduction, and allows for progressive rendering, which is particularly useful for web-based applications and large files. Additionally, it offers variable compression levels to either prioritize file size or visual fidelity. Overall, JPEG proved to be a highly compatible and versatile option for a variety of applications, making it a format of choice. As of 2024, JPEG remains one of the prominent and most successful image compression formats used for digital imagery, notably dominant in digital photography, and supported and/or used in most modern webpages and software applications.[^JPEG-importance]
+
+[^JPEG-compression]: de Queiroz, R L. 1998. “Processing JPEG-Compressed Images and Documents.” in *IEEE Transactions on Image Processing: A Publication of the IEEE Signal Processing Society 7 (12): 1661–72*. https://doi.org/10.1109/83.730378.
+
+[^JPEG-origins]: Wallace, G.K. 1992. “The JPEG Still Picture Compression Standard.” in *IEEE Transactions on Consumer Electronics 38 (1)*. https://doi.org/10.1109/30.125072.
+
+[^JPEG-importance]: Wikipedia contributors. "JPEG." In *Wikipedia, The Free Encyclopedia*. Last modified March 30, 2024. Accessed April 1, 2024. https://en.wikipedia.org/wiki/JPEG.
 
 ## Lossless
 Lossless is when there is no loss in data. When compressing a file, we want to store fewer bits all while preserving the original content [^brookes2021lossless], this is so that data is easier to store or transmit more efficiently[^lu2016lossless]. Lossless compression occurs when the decompressed data is the same as before the compression occurred[^brookes2021lossless]. For example, PNG is a lossless compression [^brian2022lossless] because the compression does not affect the quality of the image.
@@ -932,6 +1101,16 @@ The easiest way to understand this term is to take it literally. The first part 
 [^Lutkevich(n.d)mobilecomputing]: Lutkevich, Ben. n.d. "Mobile Computing," TechTarget Mobile Computing, https://www.techtarget.com/searchmobilecomputing/definition/nomadic-computing.
 
 
+## MP3
+
+An MP3 file, also known as Motion Picture Expert Group Audio Layer III, is a compressed digital audio file that uses a technology known as psychoacoustic masking to play music or sounds that can be shared and listened to repeatedly[^Stanford] (Stanford University, 2024). MP3s are considered a lossy file as the compression it undergoes is irreversible and some of the original file’s data was lost during the compression process. In addition, while the quality is still not like the original, MP3 music files often do have fairly high audio quality. The advantage of this compression is that it also reduces the size of the file itself. For example, an average MP3 file is around 3 MB, which is very low when comparing it to a lossless file type like a Waveform Audio file, or WAV, which is often 30 MB[^Gavin] (Gavin, 2018). In making these audio files smaller through a series of compressions, it makes it easier to exchange or share via the Internet and easier to save in a hard drive[^Sterne] (Sterne, 1997). Unfortunately, all of that compression does garner some disadvantages as well in exchange for some hard drive space. One of the main disadvantages being the loss of sound quality when being converted from a lossless file format, which happens because the compression removes parts of the audio that the human ear cannot hear. Fortunately, this often goes unnoticed by the public.
+
+[^Gavin]:Gavin, Brady. 2018. “What Is an MP3 File (and How Do I Open One)?” How-to Geek. How-To Geek. August 7, 2018. https://www.howtogeek.com/361516/what-is-an-mp3-file-and-how-do-i-open-one/.
+
+[^Stanford]:Stanford University. 2024. “MP3 vs the World.” Cs.stanford.edu. March 30, 2024. https://cs.stanford.edu/people/eroberts/cs201/projects/1999-00/dmca-2k/mp3.html.
+
+[^Sterne]:Sterne, Jonathan. 1997. “The Mp3 as Cultural Artifact.” Burkart and McCourt 8. https://doi.org/10.1177/1461444806067737].
+
 ## Multiplatform
 
 In computing, "multiplatform" refers to software capable of running on two or more different hardware platforms. It's also known as cross-platform software, platform-agnostic software, or platform-independent software. [^Zare24multiplatform1]
@@ -953,6 +1132,25 @@ Cross-platform programming involves intentionally writing software to function o
 [^Zare24multiplatform4]: PCMag. "Multiplatform." Accessed March 2, 2024. https://www.pcmag.com/encyclopedia/term/multiplatform.
 
 [^Zare24multiplatform5]: Hu, Hanwen, Yuan Tian, Safwat Hassan, Dayi Lin, and 2023 IEEE Conference on Games (CoG) Boston, MA, USA 2023 Aug. 21 - 2023 Aug. 24. 2023. “2023 Ieee Conference on Games (Cog).” Essay. In Analyzing Gamer Complaints in Reviews of Cross-Platform Video Games on Steam, 1–8. IEEE.    
+
+## Multitouch
+
+Multitouch technology allows users to interact with computers via graphical user interfaces, utilizing multiple points of contact at the same time to improve interaction efficiency. Multitouch interfaces, which combine display technology with sensors capable of tracking multiple points of input, provide a more natural and intuitive interaction experience. [^Zare24multitouch1]
+
+Multitouch technology produces an interface that blurs the distinction between virtual and physical reality by reading and responding to numerous simultaneous touches. Using grid technology, it recognizes point groupings rather than single points picked using a mouse, finger, or stylus. [^Zare24multitouch2]
+
+The concept of multitouch technology dates back to 1982, when Nimish Mehta of Toronto University created the first multitouch display using finger pressure. However, its widespread adoption was initially limited by shortages and high costs. The release of Apple's iPhone revolutionized its adoption. [^Zare24multitouch3]
+
+ Apple has prominently used multitouch technology in products such as the iPhone and iPad. Furthermore, multitouch touchpads are popular in laptops, and tablet computers have essentially supplanted traditional stylus input, which is supported by modern operating systems. [^Zare24multitouch4]
+
+Multitouch products use detecting technologies that fall into three categories: sensor arrays, capacitive sensing, and vision-based systems. Sensor arrays are employed in multitouch products to detect and interpret multiple points of contact on a surface, enabling intuitive interaction. Capacitive sensing technology is utilized to detect changes in electrical capacitance caused by touch, allowing for precise and responsive multitouch input. Vision-based systems utilize cameras or other optical sensors to track and interpret hand movements and gestures, enabling touchless interaction with multitouch devices. [^Zare24multitouch5]
+
+
+[^Zare24multitouch1]: Muller, Laurence YL. 2008. "Multi-touch Displays: Design, Applications and Performance Evaluation." Grid Computing–Master’s Thesis, 1-4.
+[^Zare24multitouch2]: Lehrhaupt, Madison. 2015. "Multi-Touch Technology and the Museum: An Introduction." AMT Lab. Accessed April 3, 2024. https://amt-lab.org/blog/2015/10/multi-touch-technology-and-the-museum-an-introduction.
+[^Zare24multitouch3]: Chang, Rong, Feng Wang, and Pengfei You. 2010. "A Survey on the Development of Multi-touch Technology." In 2010 Asia-Pacific Conference on Wearable Computing Systems, pp. 363-366. IEEE.
+[^Zare24multitouch4]: PCMag Staff. 2009. "Key Apple Multi-Touch Patent Tech Approved." PCMag. Accessed April 3, 2024. https://www.pcmag.com/archive/key-apple-multi-touch-patent-tech-approved-236405#fbid=lGomcx1lHVvV. 
+[^Zare24multitouch5]: Lei, Philip IS, and Angus KY Wong. 2009. "The multiple-touch user interface revolution." IT Professional Magazine 11, no. 1: 42.
 
 ## Natural Language Processing
 Natural Language Processing (NLP) is a broad field driven by both computerized and theoretical approaches to analyze and represent human languages.[^Chowdhary01NPL]
@@ -1020,6 +1218,16 @@ Some popular examples of open source software include the Linux operating system
 [^osi01Wiki]: “The Open Source Definition.” 2006. Open Source Initiative. July 7, 2006. https://opensource.org/osd/.
 
 [^diffingo02Wiki]: “What Is Open Source Software.” n.d. Diffingo Solutions Inc. Accessed January 29, 2024. https://diffingo.com/oss/whyoss.
+
+## OS
+
+An operating system, or better known as an OS, is a “program that acts as an interface between the computer user and computer hardware and controls the execution of programs”[^Wollongong] (University of Wollongong Australia, 2024). The OS’ job is to manage all the software ([Software](../main/glossary.md#Software)) and hardware of the device in order to perform basic tasks such as file, memory, and process management, essentially acting as an interface for the computer hardware and the user. There are three main types of operating systems that are widely known and used by the public, those being Microsoft Windows, Mac OS, and Linux[^GCFGlobal] (GCFGlobal, 2024). They’re all very similar for the most part, but also do have some unique characteristics. For example. Microsoft Windows is pre-downloaded on all devices except Apples devices, where Mac OS is already downloaded, and Linux does not come pre-downloaded but can be manually installed and is highly customizable. These operating systems also all use unique default browsers, Internet Explorer for Windows users, Safari for Mac users and Firefox for Linux users. As a result, these all work in different ways, but ultimately do the same thing to ensure your device runs smoothly and effectively[^Bazukiu] (Bazukiu et al. 2023, 16:161–77).
+
+[^Bazukiu]:Bazukiu, Robert, Anaamotulim Anab, Seth Gyemerah, and Mohammed I. Daabo. 2023. An Overview of Computer Operating Systems and Emerging Trends. 4th ed. Vol. 16. Asian Journal of Research in Computer Science. https://www.researchgate.net/publication/374888061_An_Overview_of_Computer_Operating_Systems_and_Emerging_Trends.
+
+[^GCFGlobal]:GCFGlobal. 2016. “Computer Basics: Understanding Operating Systems.” GCFGlobal.org. GCFGlobal. 2016. https://edu.gcfglobal.org/en/computerbasics/understanding-operating-systems/1/.
+
+[^Wollongong]:University of Wollongong Australia. 2024. “Understanding Operating Systems - University of Wollongong – UOW.” Www.uow.edu.au. 2024. https://www.uow.edu.au/student/support-services/academic-skills/online-resources/technology-and-software/operating-systems/.
 
 ## Pantone
 Pantone is a color system used in printing that allows for a universal agreement on specific colors we expect to get from print.
@@ -1215,7 +1423,7 @@ This was worked around quickly, since this abuse of SEO might drive away users t
 [^SEO]: Davis, Harold. Search engine optimization. " O'Reilly Media, Inc.", 2006.
 
 ## Social Networking
-The act of social networking refers to using any form of internet-based social media websites, such as Instagram, Twitter, and Facebook to stay connected with family and friends alike, while also sharing any multiple forms of media[^Kenton] (Kenton, 2023). From the examples listed, they each have different uses, for example, Instagram is a video and picture sharing application where others can like and share the things you upload. Twitter is a communication network, where users can share their thoughts by using hashtags. Lastly, Facebook is an application meant for connecting with friends and distant family members to remain in touch with them. The use of social networking can either be social, to communicate and interact with others online, or business, to talk about your field with likeminded individuals. It has changed “our means of gathering information and communicating with each other and contributing to both these practices through creative production”[^Fenton]. While there are some advantages about social networking there are also some disadvantages such as the spreading of misinformation, anonymity, and cause depressive symptoms, anxiety, and low self-esteem[^Pantic].
+The act of social networking refers to using any form of internet-based social media websites within a cyberspace ([Cyberspace](../main/glossary.md#Cyberspace)), such as Instagram, Twitter, and Facebook to stay connected with family and friends alike, while also sharing any multiple forms of media[^Kenton] (Kenton, 2023). From the examples listed, they each have different uses, for example, Instagram is a video and picture sharing application where others can like and share the things you upload. Twitter is a communication network, where users can share their thoughts by using hashtags. Lastly, Facebook is an application meant for connecting with friends and distant family members to remain in touch with them. The use of social networking can either be social, to communicate and interact with others online, or business, to talk about your field with likeminded individuals, they share a similar use to that of blogs ([Blog](../main/glossary.md#Blog)). It has changed “our means of gathering information and communicating with each other and contributing to both these practices through creative production”[^Fenton]. While there are some advantages about social networking there are also some disadvantages such as the spreading of misinformation, anonymity, and cause depressive symptoms, anxiety, and low self-esteem[^Pantic].
 
 [^Kenton]:Kenton, Will. 2023. Review of What Is Social Networking? Edited by Julius Mansa and Amanda Jackson. Investopedia. Investopedia. December 22, 2023. https://www.investopedia.com/terms/s/social-networking.asp#:~:text=Social%20networking%20refers%20to%20using,)%2C%20Instagram%2C%20and%20Pinterest
 [^Pantic]:Pantic, Igor. 2014. “Online Social Networking and Mental Health.” Cyberpsychology, Behavior, and Social Networking 17 (10): 652–57. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4183915/.
